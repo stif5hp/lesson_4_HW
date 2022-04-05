@@ -11,8 +11,7 @@ namespace HW_4
             int num = Convert.ToInt32(Console.ReadLine());
             string fib = "0 1 ";
             fib += Fibonacci(num, 0, 1);
-            Console.WriteLine(fib);
-
+            Console.WriteLine($"Ряд чисел {fib}");
         }
 
 
@@ -25,6 +24,7 @@ namespace HW_4
             }
             result = $"{firstNum + secondNum} ";
             return result + Fibonacci(num - 1, secondNum, firstNum + secondNum);
+
         }
 
 
